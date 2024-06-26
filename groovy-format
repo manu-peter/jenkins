@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    
+    stages{
+        stage ('checkout') {
+            steps {
+                git branch : "main" , url : "https://github.com/manu-peter/jenkins.git"
+            }
+        }
+        
+        stage ('build') {
+            steps{
+                echo "building..."
+                sh 'ls'
+                sh 'pwd'
+                sh 'whoami'
+            }
+        }
+        stage('Copy File') {
+           steps {
+                   sh 'echo admin123 | sudo -S cp index.html /var/www/html'
+                }
+        }
+    }
+}
