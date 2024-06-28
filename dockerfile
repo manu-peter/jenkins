@@ -1,9 +1,11 @@
-FROM httpd                                                    #First create a file named dockerfile in the github repo and type the first 3 lines of this file
+#First create a file named dockerfile in the github repo and type the first 3 lines of this file
+
+FROM httpd                                                    
 COPY index.html /usr/local/apache2/htdocs
 EXPOSE 80
 
-
-#Groovy format to build dodcker image and container using jenkins         #Then copy paste this groovy format to the jenkines pipeline project terminal and save it and click on build now
+#Then copy paste this groovy format to the jenkines pipeline project terminal and save it and click on build now
+#Groovy format to build dodcker image and container using jenkins         
 
 pipeline{
     agent any
