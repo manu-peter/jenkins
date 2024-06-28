@@ -1,4 +1,4 @@
-
+#Groovy-format to checkout,build and copy a file to specific location
 
 pipeline{
     agent any
