@@ -25,7 +25,7 @@ pipeline{
         }
         stage('Container') {
            steps {
-                   sh 'echo admin123 | sudo -S docker run -d -p 9090:80 --name jenkins jenkinsimg1'   #Make sure to give the same image name as the container name
+                   sh 'echo admin123 | sudo -S docker run -d -p 9090:80 --name jenkins jenkinsimg1'   #Make sure to give the image name as the container name
                 }
         }
     }
