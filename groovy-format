@@ -10,7 +10,7 @@ pipeline{
             }
         }
         
-        stage ('build') {
+        stage ('build') {                                                                              #This "stage (build)" stage is optional
             steps{
                 echo "building..."
                 sh 'ls'
