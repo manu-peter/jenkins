@@ -20,7 +20,7 @@ pipeline{
         }
         stage('Copy File') {
            steps {
-                   sh 'echo admin123 | sudo -S cp index.html /var/www/html'
+                   sh 'echo admin123 | sudo -S cp index.html /var/www/html'                            #Change the index.html (template/page) and the /var/www/html based on the service we use
                 }
         }
     }
